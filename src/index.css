@@ -27,6 +27,7 @@ body {
 
 .page__header-img{
     object-fit: cover;
+    min-height: 140px;
     width: 100%;
 }
 
@@ -108,4 +109,63 @@ button {
 
 img {
     display: block;
+}
+
+/* 1200px width */
+
+@media (max-width: 1200px) 
+{
+    .info
+    {
+        margin: 20px auto;
+        width: 90%;
+    }
+    .page__header 
+    {
+        max-height: 200px;
+    }
+}
+
+/* 360px width */
+
+@media (max-width: 360px) 
+{
+    .info
+    {
+        margin: 10px auto;
+        width: 80%;
+    }
+    .info__li
+    {
+        font-size: 1rem;
+    }
+    .info__location
+    {
+        font-size: 1rem;
+    }
+    .page__header
+    {
+        max-height: 120px;
+    }
+    form
+    {
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+    }
+    input
+    {
+        width: 80%;
+    }
+    .info__second
+    {
+        gap: 15px;
+    }
+    .resident-container
+    {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
 }
